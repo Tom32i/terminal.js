@@ -1,0 +1,20 @@
+{
+  "name": "terminal.js",
+  "version": "0.0.1",
+  "description": "Terminal in js/css :)",
+  "homepage": "https://github.com/Tom32i/terminal.js",
+  "license": "MIT",
+  "author": {
+    "name": "Thomas JARRAND",
+    "email": "thomas.jarrand@gmail.com",
+    "url": "http://thomas-jarrand.com"
+  },
+  "devDependencies": {
+    "gulp": "^3.7.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-header": "^1.0.2",
+    "gulp-jshint": "^1.6.1",
+    "gulp-minify-css": "^0.3.6",
+    "gulp-uglify": "^0.3.0"
+  }
+}

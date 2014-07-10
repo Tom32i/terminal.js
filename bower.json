@@ -1,0 +1,18 @@
+{
+  "name": "terminal.js",
+  "version": "0.0.1",
+  "description": "Terminal in js/css :)",
+  "homepage": "https://github.com/Tom32iterminal.js",
+  "license": "MIT",
+  "authors": [{
+    "name": "Thomas JARRAND",
+    "email": "thomas.jarrand@gmail.com",
+    "homepage": "http://thomas-jarrand.com"
+  }],
+  "main": "dist/terminal.min.js",
+  "dependencies": {},
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ]
+}
