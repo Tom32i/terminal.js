@@ -33,7 +33,7 @@ function Terminal()
     this.domElement.appendChild(this.container);
     this.domElement.appendChild(this.cursor);
 
-    document.getElementsByTagName("head")[0].appendChild(l);
+    document.getElementsByTagName("head")[0].appendChild(css);
     document.body.appendChild(this.domElement);
 
     this.update           = this.update.bind(this);
