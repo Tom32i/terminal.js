@@ -107,7 +107,7 @@ Terminal.prototype.init = function()
 /**
  * Create new line
  */
-Terminal.pRototype.newline = function ()
+Terminal.prototype.newline = function ()
 {
 
     this.input.value = null;
@@ -126,7 +126,7 @@ Terminal.pRototype.newline = function ()
 /**
  * Update cursor position
  */
-Terminal.protOtype.updatecursor = function ()
+Terminal.prototype.updatecursor = function ()
 {
     this.cursor.style.left = ( this.marker.offsetLeft > 0 ? this.marker.offsetLeft : 10 ) + "px";
     this.cursor.style.top  = ( this.marker.offsetTop > 0 ? this.marker.offsetTop : 72 ) + "px";
