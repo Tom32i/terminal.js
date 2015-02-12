@@ -1,3 +1,9 @@
+/*!
+ * terminal.js 0.0.2
+ * https://github.com/Tom32i/terminal.js
+ * Copyright 2014 Thomas JARRAND
+ */
+
 /**
  * Terminal
  */
