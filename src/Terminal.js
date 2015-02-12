@@ -57,11 +57,11 @@ Terminal.prototype.keyboardListener = function (e)
  * Write a message
  *
  * @param {String} str
- * @param {Boolean} newline
+ * @param {Boolean} newLine
  */
-Terminal.prototype.write = function (message, newline)
+Terminal.prototype.write = function (message, newLine)
 {
-    if(newline)
+    if(newLine)
     {
         this.newLine();
     }
@@ -91,8 +91,8 @@ Terminal.prototype.init = function()
 
     this.cursor.style.top = 0;
 
-    this.input.onkeyup = this.update;
-    window.onkeydown   = this.keyboardListener;
+    this.input.addEventListener('keyup', this.update);
+    window.addEventListener('keydown', this.keyboardListener);
 
     this.write(" _____               _________  _ ", true);
     this.write("|_   _|__  _ __ ___ |___ /___ \\(_)", true);
@@ -107,7 +107,7 @@ Terminal.prototype.init = function()
 /**
  * Create new line
  */
-Terminal.prototype.newline = function ()
+Terminal.prototype.newLine = function()
 {
 
     this.input.value = null;
@@ -126,7 +126,7 @@ Terminal.prototype.newline = function ()
 /**
  * Update cursor position
  */
-Terminal.prototype.updatecursor = function ()
+Terminal.prototype.updateCursor = function ()
 {
     this.cursor.style.left = ( this.marker.offsetLeft > 0 ? this.marker.offsetLeft : 10 ) + "px";
     this.cursor.style.top  = ( this.marker.offsetTop > 0 ? this.marker.offsetTop : 72 ) + "px";
