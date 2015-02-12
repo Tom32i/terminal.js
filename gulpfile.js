@@ -43,7 +43,7 @@ gulp.task('min', function(){
 
     gulp.src(srcDir + '**/*.css')
         .pipe(concat(meta.name.replace('.js', '.min.css')))
-        .pipe(minifyCSS())
+        .pipe(minify())
         .pipe(header(banner, meta))
         .pipe(gulp.dest(distDir));
 });

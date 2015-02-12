@@ -7,7 +7,7 @@ function Terminal()
 
     css.setAttribute('rel', 'stylesheet');
     css.setAttribute('type', 'text/css');
-    css.setAttribute('href', 'http://lab.thomas-jarrand.com/console/console.css');
+    css.setAttribute('href', 'http://lab.tom32i.fr/console/console.css');
 
     this.domElement = document.createElement('div');
     this.domElement.setAttribute('id', 'console');
@@ -51,7 +51,7 @@ Terminal.prototype.keyboardListener = function (e)
         this.input.focus();
         this.update();
     }
-}
+};
 
 /**
  * Write a message
@@ -72,7 +72,7 @@ Terminal.prototype.write = function (message, newline)
     this.line.appendChild(this.marker);
 
     this.updateCursor();
-}
+};
 
 /**
  * Update
@@ -80,7 +80,7 @@ Terminal.prototype.write = function (message, newline)
 Terminal.prototype.update = function ()
 {
     this.write(this.input.value);
-}
+};
 
 /**
  * Init console
@@ -102,7 +102,7 @@ Terminal.prototype.init = function()
 
     this.newLine();
     this.newLine();
-}
+};
 
 /**
  * Create new line
@@ -121,18 +121,15 @@ Terminal.pRototype.newline = function ()
     this.container.appendChild(this.line);
 
     this.updateCursor();
-}
+};
 
 /**
  * Update cursor position
  */
 Terminal.protOtype.updatecursor = function ()
 {
-    console.log(this.line.offsetTop);
-    console.log(this.marker.offsetTop);
-
     this.cursor.style.left = ( this.marker.offsetLeft > 0 ? this.marker.offsetLeft : 10 ) + "px";
     this.cursor.style.top  = ( this.marker.offsetTop > 0 ? this.marker.offsetTop : 72 ) + "px";
-}
+};
 
 new Terminal();
