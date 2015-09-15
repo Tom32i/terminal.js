@@ -30,7 +30,7 @@ body > * {
 
 #console pre {
     font:12px/12px Monospace;
-    min-height:12px;
+    min-height:13px;
     margin:0;
     padding:0 10px;
     width:auto;
