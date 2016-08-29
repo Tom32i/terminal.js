@@ -9,6 +9,9 @@
     "email": "thomas.jarrand@gmail.com",
     "url": "http://thomas-jarrand.com"
   },
+  "scripts": {
+    "build": "gulp"
+  },
   "devDependencies": {
     "gulp": "^3.7.0",
     "gulp-concat": "^2.2.0",
