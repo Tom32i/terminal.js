@@ -7,7 +7,7 @@
   "author": {
     "name": "Thomas JARRAND",
     "email": "thomas.jarrand@gmail.com",
-    "url": "http://thomas-jarrand.com"
+    "url": "http://thomas.jarrand.fr"
   },
   "scripts": {
     "build": "gulp"

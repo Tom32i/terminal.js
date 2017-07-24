@@ -7,7 +7,7 @@ function Terminal()
 
     css.setAttribute('rel', 'stylesheet');
     css.setAttribute('type', 'text/css');
-    css.setAttribute('href', 'http://lab.tom32i.fr/console/terminal.min.css');
+    css.setAttribute('href', '//lab.tom32i.fr/console/terminal.min.css');
 
     this.domElement = document.createElement('div');
     this.domElement.setAttribute('id', 'console');
